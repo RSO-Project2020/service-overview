@@ -2,9 +2,9 @@
 
 ## Implementacije mikrostoritev
 
-Upravljanje uporabnikov: deluje, potrebuje delujočo bazo
+Upravljanje uporabnikov: deluje
 
-Baza uporabnik - karte: ni implementirana
+Baza uporabnik - karte: deluje
 
 Matching imam - želim: ni implementirana
 
@@ -12,7 +12,7 @@ Sporočila: ni implementirana
 
 Določanje vrednosti kart: ni implementirana
 
-Podatki o kartah: deluje, potrebuje delujočo bazo
+Podatki o kartah: deluje
 
 ## Naloge
 
@@ -28,7 +28,7 @@ Podatki o kartah: deluje, potrebuje delujočo bazo
 
 7: ❌
 
-8: ❌
+8: logging je že v google cloud, kako uporabiti? toleranca napak ne
 
 9: ❌
 
