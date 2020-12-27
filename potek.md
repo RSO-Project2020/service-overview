@@ -8,7 +8,7 @@ Baza uporabnik - karte: deluje
 
 Matching imam - želim: ni implementirana
 
-Sporočila: ni implementirana
+Sporočila: deluje
 
 Določanje vrednosti kart: ni implementirana
 
