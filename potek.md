@@ -26,7 +26,7 @@ Podatki o kartah: deluje
 
 6: liveness ja, readiness ne, metrike ne
 
-7: ❌
+7: ✔
 
 8: logging je že v google cloud, kako uporabiti? toleranca napak ne
 
