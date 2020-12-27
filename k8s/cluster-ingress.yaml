@@ -1,0 +1,57 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: cardmatching-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: api-ip
+spec:
+  backend:
+    serviceName: user-auth
+    servicePort: 8080
+  rules:
+  - http:
+      paths:
+      - path: /tokens
+        backend:
+          serviceName: user-auth
+          servicePort: 8080
+      - path: /v1/users
+        backend:
+          serviceName: user-auth
+          servicePort: 8080
+      - path: /v1/users/*
+        backend:
+          serviceName: user-auth
+          servicePort: 8080
+      - path: /v1/cards
+        backend:
+          serviceName: card-data
+          servicePort: 8080
+      - path: /v1/cards/*
+        backend:
+          serviceName: card-data
+          servicePort: 8080
+      - path: /v1/samples
+        backend:
+          serviceName: user-cards
+          servicePort: 8080
+      - path: /v1/samples/*
+        backend:
+          serviceName: user-cards
+          servicePort: 8080
+      - path: /v1/wishes
+        backend:
+          serviceName: user-cards
+          servicePort: 8080
+      - path: /v1/wishes/*
+        backend:
+          serviceName: user-cards
+          servicePort: 8080
+      - path: /v1/messages
+        backend:
+          serviceName: messages
+          servicePort: 8080
+      - path: /v1/messages/*
+        backend:
+          serviceName: messages
+          servicePort: 8080
