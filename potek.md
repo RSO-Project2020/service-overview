@@ -24,7 +24,7 @@ Podatki o kartah: deluje
 
 **5**: `google-login` je LoadBalancer, MS so NodePort, ClusterIP nimamo, ker ni internih storitev
 
-**6**: liveness ja, readiness ne, metrike ne
+**6**: liveness ja, readiness ja, metrike ne (Monitoring na GCP?)
 
 **7**: ✔
 
