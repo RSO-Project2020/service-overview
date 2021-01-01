@@ -6,7 +6,7 @@ Upravljanje uporabnikov: deluje
 
 Baza uporabnik - karte: deluje
 
-Matching imam - želim: ni implementirana
+Matching imam - želim: deluje
 
 Sporočila: deluje
 
@@ -28,14 +28,14 @@ Podatki o kartah: deluje
 
 **7**: ✔
 
-**8**: logging je že v google cloud, kako uporabiti? toleranca napak ne
+**8**: logging ja, toleranca napak ne
 
 **9**: zunanji API ja, napredni komunikacijski protokoli ne, frontend WIP
 
 **zagovor**:
 
-- 5 primerov z več mikrostoritvami: ne
-- število mikrostoritev: 4/6
+- 5 primerov z več mikrostoritvami: za zdaj matching: POST/PATCH sample/wish (technically 4?)
+- število mikrostoritev: 5/6
 
 ## Drugo
 
