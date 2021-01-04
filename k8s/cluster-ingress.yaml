@@ -5,9 +5,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.global-static-ip-name: api-ip
 spec:
-  backend:
-    serviceName: user-auth
-    servicePort: 8080
   rules:
   - http:
       paths:
@@ -23,14 +20,14 @@ spec:
         backend:
           serviceName: user-auth
           servicePort: 8080
-      - path: /v1/cards
-        backend:
-          serviceName: card-data
-          servicePort: 8080
-      - path: /v1/cards/*
-        backend:
-          serviceName: card-data
-          servicePort: 8080
+      # - path: /v1/cards
+      #   backend:
+      #     serviceName: card-data
+      #     servicePort: 8080
+      # - path: /v1/cards/*
+      #   backend:
+      #     serviceName: card-data
+      #     servicePort: 8080
       - path: /v1/samples
         backend:
           serviceName: user-cards
@@ -47,11 +44,19 @@ spec:
         backend:
           serviceName: user-cards
           servicePort: 8080
-      - path: /v1/messages
+      # - path: /v1/messages
+      #   backend:
+      #     serviceName: messages
+      #     servicePort: 8080
+      # - path: /v1/messages/*
+      #   backend:
+      #     serviceName: messages
+      #     servicePort: 8080
+      - path: /v1/card-images
         backend:
-          serviceName: messages
+          serviceName: card-images
           servicePort: 8080
-      - path: /v1/messages/*
+      - path: /v1/card-images/*
         backend:
-          serviceName: messages
+          serviceName: card-images
           servicePort: 8080

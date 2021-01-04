@@ -10,7 +10,7 @@ Matching imam - želim: deluje
 
 Sporočila: deluje
 
-Slike kart: ni implementirana
+Slike kart: deluje
 
 Podatki o kartah: deluje
 
@@ -22,7 +22,7 @@ Podatki o kartah: deluje
 
 **4**: delno, uporabljajo se okoljske spremenljivke, ne pa konfiguracijski strežnik
 
-**5**: `google-login` je LoadBalancer, MS so NodePort, ClusterIP nimamo, ker ni internih storitev
+**5**: `google-login` je LoadBalancer, MS so NodePort, ClusterIP bi lahko bil matching?
 
 **6**: liveness ja, readiness ja, metrike ne (Monitoring na GCP?)
 
@@ -35,7 +35,7 @@ Podatki o kartah: deluje
 **zagovor**:
 
 - 5 primerov z več mikrostoritvami: za zdaj matching: POST/PATCH sample/wish (technically 4?)
-- število mikrostoritev: 5/6
+- število mikrostoritev: 6/6 (samo 5 naenkrat lahko na ingressu)
 
 ## Drugo
 
