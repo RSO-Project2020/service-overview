@@ -30,7 +30,7 @@ Podatki o kartah: deluje
 
 **8**: logging ja, toleranca napak ne
 
-**9**: zunanji API ja, napredni komunikacijski protokoli ne, frontend WIP
+**9**: zunanji API ja, napredni komunikacijski protokoli ja (GraphQL), frontend WIP
 
 **zagovor**:
 

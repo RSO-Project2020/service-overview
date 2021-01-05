@@ -63,3 +63,7 @@ spec:
         backend:
           serviceName: card-images
           servicePort: 8080
+      - path: /cards-graphql
+        backend:
+          serviceName: card-data
+          servicePort: 8080
