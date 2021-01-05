@@ -6,7 +6,7 @@
 - naslova nad `samples` in `wishes` (lahko kar h1, glej "Covid 19 daily stats for Slovenia:")
 - polja za vnos novih samplov in wish-ov (glej pošiljanje sporočil)
   - `curl -X POST "https://api.cardmatching.ovh/v1/samples" -H  "accept: application/json" -H "Authorization: Bearer $TOKEN" -d "{\"user_id\":2,\"card_id\":1,\"state\":\"njoh\",\"wts\":true}"`
-  - `curl -X POST "https://api.cardmatching.ovh/v1/samples" -H  "accept: application/json" -H "Authorization: Bearer $TOKEN" -d "{\"user_id\":2,\"card_id\":1}"`
+  - `curl -X POST "https://api.cardmatching.ovh/v1/wishes" -H  "accept: application/json" -H "Authorization: Bearer $TOKEN" -d "{\"user_id\":2,\"card_id\":1}"`
 
 ## /allcards
 
